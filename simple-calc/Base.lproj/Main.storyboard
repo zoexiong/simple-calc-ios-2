@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,7 +17,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ3-o9-Gb0">
@@ -262,9 +263,19 @@
                                     <action selector="btnClear:" destination="BYZ-38-t0r" eventType="touchDown" id="g35-n1-0vG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngu-GY-swp">
+                                <frame key="frameInset" minX="270" minY="22" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="History"/>
+                                <connections>
+                                    <segue destination="GyE-r7-TG7" kind="show" id="mxG-nh-80M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.91568509615384619" green="0.90289652475000448" blue="0.91101629927128625" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="kBl-tH-6Hh" firstAttribute="top" secondItem="gkr-aj-Rel" secondAttribute="bottom" constant="5" id="0WB-51-CF7"/>
                             <constraint firstItem="mEf-UY-qkG" firstAttribute="leading" secondItem="wgr-Og-dSv" secondAttribute="trailing" constant="8" id="1Vt-i0-oc3"/>
                             <constraint firstItem="HFg-Ho-QzV" firstAttribute="height" secondItem="IBy-mz-exM" secondAttribute="height" id="1jg-4a-1Jq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kBl-tH-6Hh" secondAttribute="trailing" id="2Eg-Q0-FHm"/>
@@ -305,10 +316,10 @@
                             <constraint firstItem="TTn-bC-JOx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ldp-wc-TEH"/>
                             <constraint firstItem="UUr-u9-ctr" firstAttribute="leading" secondItem="HFg-Ho-QzV" secondAttribute="trailing" constant="7" id="MBa-SV-pED"/>
                             <constraint firstItem="UJh-CP-Xi0" firstAttribute="height" secondItem="Nxd-Nk-yAx" secondAttribute="height" id="MeA-Sc-XgG"/>
-                            <constraint firstItem="TTn-bC-JOx" firstAttribute="height" secondItem="gkr-aj-Rel" secondAttribute="height" id="MhF-VG-KBb"/>
+                            <constraint firstItem="TTn-bC-JOx" firstAttribute="height" secondItem="gkr-aj-Rel" secondAttribute="height" multiplier="4:3" id="MhF-VG-KBb"/>
                             <constraint firstItem="RjS-u8-TKi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Mho-mK-qtk"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="owX-Nc-3WA" secondAttribute="bottom" constant="10" id="Nhb-lf-Ynz"/>
-                            <constraint firstItem="gkr-aj-Rel" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="PF3-pK-7WI"/>
+                            <constraint firstItem="gkr-aj-Rel" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="PF3-pK-7WI"/>
                             <constraint firstItem="bKN-vU-nQ6" firstAttribute="leading" secondItem="Nxd-Nk-yAx" secondAttribute="trailing" constant="10" id="PnX-vj-91U"/>
                             <constraint firstItem="dFR-n2-IUT" firstAttribute="height" secondItem="IBy-mz-exM" secondAttribute="height" id="PyJ-2D-m3S"/>
                             <constraint firstItem="HFg-Ho-QzV" firstAttribute="width" secondItem="IBy-mz-exM" secondAttribute="width" id="R8u-1a-Ca4"/>
@@ -346,7 +357,6 @@
                             <constraint firstItem="Nxd-Nk-yAx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="k8u-xy-y05"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NSG-xx-HC3" secondAttribute="bottom" constant="10" id="kQq-jR-D8S"/>
                             <constraint firstItem="RjS-u8-TKi" firstAttribute="height" secondItem="IBy-mz-exM" secondAttribute="height" id="kki-FC-PLr"/>
-                            <constraint firstItem="kBl-tH-6Hh" firstAttribute="top" secondItem="gkr-aj-Rel" secondAttribute="bottom" constant="20" id="ltR-Pp-nvv"/>
                             <constraint firstItem="UJh-CP-Xi0" firstAttribute="leading" secondItem="bKN-vU-nQ6" secondAttribute="trailing" constant="10" id="mNY-G4-z9N"/>
                             <constraint firstItem="wgr-Og-dSv" firstAttribute="height" secondItem="IBy-mz-exM" secondAttribute="height" id="mrY-Fm-esF"/>
                             <constraint firstItem="UUr-u9-ctr" firstAttribute="height" secondItem="IBy-mz-exM" secondAttribute="height" id="nlz-ZG-ikv"/>
@@ -375,7 +385,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125.4872563718141" y="133.59999999999999"/>
+            <point key="canvasLocation" x="124" y="133.5832083958021"/>
+        </scene>
+        <!--HistoryUI Table View Controller-->
+        <scene sceneID="TPR-cl-MVD">
+            <objects>
+                <viewController id="GyE-r7-TG7" customClass="historyUITableViewController" customModule="simple_calc_ios_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="WXN-Ge-bMR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="historyTableViewCell" id="5US-G5-dMW" customClass="historyTableViewCell" customModule="simple_calc_ios_2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5US-G5-dMW" id="ADV-pq-lZS">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DC-aj-E5n">
+                                            <frame key="frameInset" minX="8" width="359" height="35"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="historyLabel" destination="1DC-aj-E5n" id="LtM-nJ-Xaw"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ylE-ts-hv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

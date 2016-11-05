@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4520BA341DCDBFFB00F0B306 /* historyUItabTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4520BA331DCDBFFB00F0B306 /* historyUItabTableViewController.swift */; };
+		4520BA361DCDC10300F0B306 /* historyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4520BA351DCDC10300F0B306 /* historyTableViewCell.swift */; };
 		45AD786D1DC92D690063EC81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AD786B1DC92D690063EC81 /* Main.storyboard */; };
 		45F3B4AC1DBFF502003CD40B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3B4AB1DBFF502003CD40B /* AppDelegate.swift */; };
 		45F3B4AE1DBFF502003CD40B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3B4AD1DBFF502003CD40B /* ViewController.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4520BA331DCDBFFB00F0B306 /* historyUItabTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = historyUItabTableViewController.swift; path = ../historyUItabTableViewController.swift; sourceTree = "<group>"; };
+		4520BA351DCDC10300F0B306 /* historyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = historyTableViewCell.swift; sourceTree = "<group>"; };
 		45AD786C1DC92D690063EC81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45F3B4A81DBFF502003CD40B /* simple-calc-ios-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "simple-calc-ios-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F3B4AB1DBFF502003CD40B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 			children = (
 				45F3B4AB1DBFF502003CD40B /* AppDelegate.swift */,
 				45F3B4AD1DBFF502003CD40B /* ViewController.swift */,
+				4520BA331DCDBFFB00F0B306 /* historyUItabTableViewController.swift */,
+				4520BA351DCDC10300F0B306 /* historyTableViewCell.swift */,
 				45F3B4B21DBFF502003CD40B /* Assets.xcassets */,
 				45F3B4B41DBFF502003CD40B /* LaunchScreen.storyboard */,
 				45AD786B1DC92D690063EC81 /* Main.storyboard */,
@@ -263,6 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				45F3B4AE1DBFF502003CD40B /* ViewController.swift in Sources */,
+				4520BA341DCDBFFB00F0B306 /* historyUItabTableViewController.swift in Sources */,
+				4520BA361DCDC10300F0B306 /* historyTableViewCell.swift in Sources */,
 				45F3B4AC1DBFF502003CD40B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
